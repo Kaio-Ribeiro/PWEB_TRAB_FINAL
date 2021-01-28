@@ -40,7 +40,11 @@
   font-weight: 800;
 }
 
-#page-map .create-campaign{
+#page-map .leaflet-container{
+  z-index: 5;
+}
+
+#page-map .create-charity-events{
   position:absolute;
   right: 40px;
   bottom: 40px;
@@ -49,6 +53,8 @@
   background: #15c3d6;
   border-radius: 20px;
 
+  z-index: 10;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +62,6 @@
   transition: background-color 0.2s;
 }
 
-#page-map .create-campaign:hover{
+#page-map .create-charity-events:hover{
   background:#17e5db;
 }

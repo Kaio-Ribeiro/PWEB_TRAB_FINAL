@@ -3,9 +3,12 @@ import {Link} from 'react-router-dom';
 
 import mapMarkerImg from '../images/map-marker.svg';
 import {FiPlus} from 'react-icons/fi';
-import '../styles/pages/campaign-map.css';
+import { MapContainer, TileLayer } from 'react-leaflet';
 
-function campaignMap(){
+import 'leaflet/dist/leaflet.css';
+import '../styles/pages/charity-events-map.css';
+
+function charityEventsMap(){
   return (
     <div id="page-map">
       <aside>
@@ -24,13 +27,19 @@ function campaignMap(){
 
       </aside>
 
-      <div><h1>Listar aqui</h1></div>
+      <MapContainer
+        center={[-6.5983908,-39.060646]}
+        zoom={15}
+        style={{ width: '100%', height: '100%' }}
+      >
+        <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+      </MapContainer>
 
-      <Link to="" className="create-campaign">
+      <Link to="" className="create-charity-events">
         <FiPlus size={32} color="#FFF"/>
       </Link>
     </div>
   );
 }
 
-export default campaignMap;
+export default charityEventsMap;
