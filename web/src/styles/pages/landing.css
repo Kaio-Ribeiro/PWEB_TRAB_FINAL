@@ -1,7 +1,7 @@
 #page-landing{
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+  background: #29B6D1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background: url(../../images/landing.svg) no-repeat 83% center;
+  background: url(../../images/landing.png) no-repeat 83% center;
 }
 
 #page-landing .content-wrapper main{
